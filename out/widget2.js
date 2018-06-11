@@ -1,10 +1,4 @@
-webpackJsonp([1],{
-
-/***/ 7:
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
-
 Object.defineProperty(exports, "__esModule", { value: true });
 function render(container) {
     // Imagine lots of widget code here.
@@ -12,8 +6,3 @@ function render(container) {
     container.innerHTML = container.innerHTML + "  Hello, World2!";
 }
 exports.render = render;
-
-
-/***/ })
-
-});

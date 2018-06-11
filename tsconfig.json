@@ -3,7 +3,7 @@
         "outDir": "./out",
         "target": "es5",
         "moduleResolution": "node",
-        "module": "esnext",
+        "module": "commonjs",
         "strict": true,
         "importHelpers": true,
         "lib": [

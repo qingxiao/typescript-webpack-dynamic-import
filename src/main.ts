@@ -1,6 +1,6 @@
 // We have to provide a Promise polyfill if we're targeting older browsers
 // because import() returns a promise which resolves once the module is loaded
-import * as ES6Promise from "es6-promise";
+import ES6Promise = require("es6-promise");
 
 ES6Promise.polyfill();
 
@@ -21,12 +21,8 @@ async function renderWidget() {
         const widget = await import(/* webpackChunkName: "widget" */ "./widget");
         widget.render(container);
 
-        const widget2:any = await new Promise(resolve => {
-            require.ensure([], (require: any) => {
-                resolve(require('./widget2'))
-            })
-        })
-        widget2.render(container);
+        const widget2:any = ()=>import(/* webpackChunkName: "widget2" */ "./widget2");
+        widget2().then((w:any)=>w.render(container));
     }
 
 

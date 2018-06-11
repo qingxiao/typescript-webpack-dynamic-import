@@ -147,40 +147,32 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_es6_promise__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_es6_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_es6_promise__);
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(1);
 // We have to provide a Promise polyfill if we're targeting older browsers
 // because import() returns a promise which resolves once the module is loaded
-
-__WEBPACK_IMPORTED_MODULE_1_es6_promise__["polyfill"]();
+var ES6Promise = __webpack_require__(2);
+ES6Promise.polyfill();
 function renderWidget() {
-    return __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __awaiter */](this, void 0, void 0, function () {
+    return tslib_1.__awaiter(this, void 0, void 0, function () {
         var container, widget, widget2;
-        return __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __generator */](this, function (_a) {
+        return tslib_1.__generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     container = document.getElementById("widget");
-                    if (!(container !== null)) return [3 /*break*/, 3];
+                    if (!(container !== null)) return [3 /*break*/, 2];
                     return [4 /*yield*/, new Promise(function (resolve) { return __webpack_require__.e/* require.ensure */(0).then((function (require) { return resolve(__webpack_require__(/* webpackChunkName: "widget" */ 6)); }).bind(null, __webpack_require__)).catch(__webpack_require__.oe); })];
                 case 1:
                     widget = _a.sent();
                     widget.render(container);
-                    return [4 /*yield*/, new Promise(function (resolve) {
-                            __webpack_require__.e/* require.ensure */(1).then((function (require) {
-                                resolve(__webpack_require__(7));
-                            }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-                        })];
-                case 2:
-                    widget2 = _a.sent();
-                    widget2.render(container);
-                    _a.label = 3;
-                case 3: return [2 /*return*/];
+                    widget2 = function () { return new Promise(function (resolve) { return __webpack_require__.e/* require.ensure */(1).then((function (require) { return resolve(__webpack_require__(/* webpackChunkName: "widget2" */ 7)); }).bind(null, __webpack_require__)).catch(__webpack_require__.oe); }); };
+                    widget2().then(function (w) { return w.render(container); });
+                    _a.label = 2;
+                case 2: return [2 /*return*/];
             }
         });
     });
@@ -193,25 +185,26 @@ renderWidget();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export __extends */
-/* unused harmony export __assign */
-/* unused harmony export __rest */
-/* unused harmony export __decorate */
-/* unused harmony export __param */
-/* unused harmony export __metadata */
-/* harmony export (immutable) */ __webpack_exports__["a"] = __awaiter;
-/* harmony export (immutable) */ __webpack_exports__["b"] = __generator;
-/* unused harmony export __exportStar */
-/* unused harmony export __values */
-/* unused harmony export __read */
-/* unused harmony export __spread */
-/* unused harmony export __await */
-/* unused harmony export __asyncGenerator */
-/* unused harmony export __asyncDelegator */
-/* unused harmony export __asyncValues */
-/* unused harmony export __makeTemplateObject */
-/* unused harmony export __importStar */
-/* unused harmony export __importDefault */
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["__extends"] = __extends;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (immutable) */ __webpack_exports__["__rest"] = __rest;
+/* harmony export (immutable) */ __webpack_exports__["__decorate"] = __decorate;
+/* harmony export (immutable) */ __webpack_exports__["__param"] = __param;
+/* harmony export (immutable) */ __webpack_exports__["__metadata"] = __metadata;
+/* harmony export (immutable) */ __webpack_exports__["__awaiter"] = __awaiter;
+/* harmony export (immutable) */ __webpack_exports__["__generator"] = __generator;
+/* harmony export (immutable) */ __webpack_exports__["__exportStar"] = __exportStar;
+/* harmony export (immutable) */ __webpack_exports__["__values"] = __values;
+/* harmony export (immutable) */ __webpack_exports__["__read"] = __read;
+/* harmony export (immutable) */ __webpack_exports__["__spread"] = __spread;
+/* harmony export (immutable) */ __webpack_exports__["__await"] = __await;
+/* harmony export (immutable) */ __webpack_exports__["__asyncGenerator"] = __asyncGenerator;
+/* harmony export (immutable) */ __webpack_exports__["__asyncDelegator"] = __asyncDelegator;
+/* harmony export (immutable) */ __webpack_exports__["__asyncValues"] = __asyncValues;
+/* harmony export (immutable) */ __webpack_exports__["__makeTemplateObject"] = __makeTemplateObject;
+/* harmony export (immutable) */ __webpack_exports__["__importStar"] = __importStar;
+/* harmony export (immutable) */ __webpack_exports__["__importDefault"] = __importDefault;
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
